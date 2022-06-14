@@ -133,8 +133,6 @@
 ;;;###autoload
 (defun 42-snippet-initialize ()
   (add-to-list 'yas-snippet-dirs '42-el-snippet-dir)
-  (set-file-template! "\\.c" :trigger "template__c" :mode 'c-mode)
-  (set-file-template! "\\.h" :trigger "template__h" :mode 'c-mode)
   (yas-load-directory 42-el-snippet-dir t))
 
 ;;;###autoload
