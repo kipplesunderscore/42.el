@@ -153,9 +153,6 @@
 		tab-width 4
 		tab-stop-list (number-sequence 4 80 4)
 		indent-tabs-mode t)
-  (add-to-list 'flycheck-checkers 'norminette)
-  (if 42-mode
-      (message "42-mode activated.")
-    (message "42-mode deactivated.")))
+  (add-to-list 'flycheck-checkers 'norminette))
 
 (provide '42.el)
