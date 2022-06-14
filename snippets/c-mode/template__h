@@ -1,0 +1,22 @@
+# -*- mode: snippet -*-
+# group: file templates
+# contributor: Henrik Lissner
+# --
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+`(42-header-file-name-line-string)`      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+`(42-header-mail-line-string)`  +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+`(42-header-created-line-string)`     #+#    #+#             */
+`(42-header-updated-line-string)`    ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+#ifndef ${1:`(upcase (file-name-base buffer-file-name))`_H$(upcase yas-text)}
+# define $1
+
+$0
+
+#endif // $1
