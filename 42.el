@@ -124,7 +124,7 @@
 (flycheck-define-checker norminette
   "The 42 school checker using the norminette command."
   :command ("norminette"
-	    source-inplace)
+	    source)
   :error-patterns ((error line-start "Error: " (zero-or-more anything) "line:" (0+ (any " ")) line ", col:" (0+ (any " ")) (0+ digit) "):" (0+ blank) (message) line-end))
   :modes c-mode
   :next-checkers ((error . c/c++-clang)
